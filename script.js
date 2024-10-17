@@ -15,3 +15,16 @@ function getEmails() {
     }
 }
 
+// View emails in the dom
+function displayEmails() {
+    const ul = documentgetElementById('email-list');
+    emailList.forEach(email => {
+        const li = document.createElement('li');
+        li.textContent = email;
+        ul.appendChild(li);
+    });
+};
+
+// Email recovery process
+getEmails();
+
